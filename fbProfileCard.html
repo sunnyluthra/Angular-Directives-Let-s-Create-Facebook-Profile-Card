@@ -1,0 +1,11 @@
+<div class="card transition">
+    <div ng-show="isLoaded">
+        <div class="avatar">
+            <img src="https://graph.facebook.com/{{fbUserName}}/picture?type=large" alt="">
+        </div>
+        <a href="{{user.link}}">{{user.name}}</a>
+    </div>
+    <div class="loading" ng-hide="isLoaded">
+    	Loading...
+    </div>
+</div>
